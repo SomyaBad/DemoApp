@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="235" id="KGk-i7-Jjw" customClass="MovieTableViewCell" customModule="ZetaDemoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="802" height="235"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="802" height="235"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7k8-Xy-Nbj">
+                        <rect key="frame" x="10" y="10" width="782" height="215"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmT-Ac-FKy">
+                                <rect key="frame" x="10" y="10" width="47" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWU-s7-l7F">
+                                <rect key="frame" x="722" y="10" width="50" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="0.41371704929999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="rS2-7V-YrI"/>
+                                    <constraint firstAttribute="height" constant="35" id="waB-w2-naT"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="All">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickToAllBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="XMb-f9-U03"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kR3-iU-cUu">
+                                <rect key="frame" x="10" y="55" width="762" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="tGl-BB-UGa"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DMr-0K-27u">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKb-jf-mOu">
+                                <rect key="frame" x="628" y="10" width="144" height="35"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1br-Y3-zWx">
+                                        <rect key="frame" x="10" y="0.0" width="124" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XI-WH-1eJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="35"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Today"/>
+                                                <connections>
+                                                    <action selector="todayBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kBT-FJ-HHi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qub-Kw-xWv">
+                                                <rect key="frame" x="52" y="0.0" width="72" height="35"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="This Week"/>
+                                                <connections>
+                                                    <action selector="thisWeekBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="09C-jY-1Ax"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="2MA-nJ-GWA"/>
+                                    <constraint firstItem="1br-Y3-zWx" firstAttribute="leading" secondItem="NKb-jf-mOu" secondAttribute="leading" constant="10" id="Gik-b0-jfa"/>
+                                    <constraint firstItem="1br-Y3-zWx" firstAttribute="top" secondItem="NKb-jf-mOu" secondAttribute="top" id="KC8-LX-tAa"/>
+                                    <constraint firstAttribute="bottom" secondItem="1br-Y3-zWx" secondAttribute="bottom" id="aE3-Ge-Onz"/>
+                                    <constraint firstAttribute="trailing" secondItem="1br-Y3-zWx" secondAttribute="trailing" constant="10" id="j03-OW-uf2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="0.28555484693877553" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kR3-iU-cUu" secondAttribute="bottom" constant="10" id="5jc-4N-TAK"/>
+                            <constraint firstItem="kR3-iU-cUu" firstAttribute="top" secondItem="NmT-Ac-FKy" secondAttribute="bottom" constant="10" id="HWb-dQ-mfE"/>
+                            <constraint firstItem="SWU-s7-l7F" firstAttribute="top" secondItem="7k8-Xy-Nbj" secondAttribute="top" constant="10" id="PSv-Mz-JHF"/>
+                            <constraint firstAttribute="trailing" secondItem="kR3-iU-cUu" secondAttribute="trailing" constant="10" id="RcY-Lo-MKH"/>
+                            <constraint firstItem="NmT-Ac-FKy" firstAttribute="leading" secondItem="7k8-Xy-Nbj" secondAttribute="leading" constant="10" id="XEk-0o-OBq"/>
+                            <constraint firstItem="NmT-Ac-FKy" firstAttribute="top" secondItem="7k8-Xy-Nbj" secondAttribute="top" constant="10" id="cTP-KL-TTY"/>
+                            <constraint firstItem="SWU-s7-l7F" firstAttribute="centerY" secondItem="NmT-Ac-FKy" secondAttribute="centerY" id="cpb-HJ-yX7"/>
+                            <constraint firstAttribute="trailing" secondItem="NKb-jf-mOu" secondAttribute="trailing" constant="10" id="qhx-5k-IZG"/>
+                            <constraint firstAttribute="trailing" secondItem="SWU-s7-l7F" secondAttribute="trailing" constant="10" id="qjh-1z-qlx"/>
+                            <constraint firstItem="kR3-iU-cUu" firstAttribute="leading" secondItem="7k8-Xy-Nbj" secondAttribute="leading" constant="10" id="r1C-sb-RCZ"/>
+                            <constraint firstItem="NKb-jf-mOu" firstAttribute="centerY" secondItem="SWU-s7-l7F" secondAttribute="centerY" id="suA-Od-rct"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7k8-Xy-Nbj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="63q-n3-vJH"/>
+                    <constraint firstAttribute="trailing" secondItem="7k8-Xy-Nbj" secondAttribute="trailing" constant="10" id="B2P-TR-CVp"/>
+                    <constraint firstAttribute="bottom" secondItem="7k8-Xy-Nbj" secondAttribute="bottom" constant="10" id="CIO-fQ-f9I"/>
+                    <constraint firstItem="7k8-Xy-Nbj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="kLZ-Aa-dyS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="allbtn" destination="SWU-s7-l7F" id="HYW-KR-M2m"/>
+                <outlet property="collectionview" destination="kR3-iU-cUu" id="fi6-Je-bYz"/>
+                <outlet property="mainview" destination="7k8-Xy-Nbj" id="caL-zo-OpB"/>
+                <outlet property="titlelbl" destination="NmT-Ac-FKy" id="nua-P6-4tw"/>
+                <outlet property="todayAndThisweekView" destination="NKb-jf-mOu" id="Dhh-2m-b0J"/>
+            </connections>
+            <point key="canvasLocation" x="384.73282442748092" y="87.676056338028175"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

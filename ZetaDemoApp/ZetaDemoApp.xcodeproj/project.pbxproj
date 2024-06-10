@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D49D7E12C14E4F000984BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D49D7E02C14E4F000984BBB /* AppDelegate.swift */; };
+		1D49D7E52C14E4F000984BBB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D49D7E42C14E4F000984BBB /* HomeViewController.swift */; };
+		1D49D7E82C14E4F000984BBB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1D49D7E72C14E4F000984BBB /* Base */; };
+		1D49D7EA2C14E4F100984BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D49D7E92C14E4F100984BBB /* Assets.xcassets */; };
+		1D49D7ED2C14E4F100984BBB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1D49D7EC2C14E4F100984BBB /* Base */; };
+		1D49D7F92C14E64B00984BBB /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D49D7F82C14E64B00984BBB /* HomeModel.swift */; };
+		1D49D7FE2C14EA5800984BBB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D49D7FD2C14EA5800984BBB /* HomeViewModel.swift */; };
+		1D49D80C2C16263A00984BBB /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D49D80B2C16263A00984BBB /* ImageExtension.swift */; };
+		1D49D80E2C162A5300984BBB /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D49D80D2C162A5300984BBB /* StringExtension.swift */; };
+		1D84715F2C1751E60079FDBD /* AddPlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D84715E2C1751E60079FDBD /* AddPlayListViewController.swift */; };
+		1D8471642C1761B20079FDBD /* PlayListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8471622C1761B20079FDBD /* PlayListTableViewCell.swift */; };
+		1D8471652C1761B20079FDBD /* PlayListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D8471632C1761B20079FDBD /* PlayListTableViewCell.xib */; };
+		1D8471672C1763740079FDBD /* CreatePlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8471662C1763740079FDBD /* CreatePlaylistViewController.swift */; };
+		1DF319CA2C1632EE005637C9 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF319C92C1632EE005637C9 /* MovieTableViewCell.xib */; };
+		1DF319CB2C1632EE005637C9 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF319C82C1632EE005637C9 /* MovieTableViewCell.swift */; };
+		1DF319CE2C163375005637C9 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF319CD2C163375005637C9 /* MovieCollectionViewCell.xib */; };
+		1DF319CF2C163375005637C9 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF319CC2C163375005637C9 /* MovieCollectionViewCell.swift */; };
+		1DF319D12C163BC1005637C9 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF319D02C163BC1005637C9 /* DateUtils.swift */; };
+		1DF319D42C163E5A005637C9 /* ViewAllMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF319D32C163E5A005637C9 /* ViewAllMoviesViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D49D7DD2C14E4F000984BBB /* ZetaDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZetaDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D49D7E02C14E4F000984BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D49D7E42C14E4F000984BBB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1D49D7E72C14E4F000984BBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D49D7E92C14E4F100984BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D49D7EC2C14E4F100984BBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D49D7EE2C14E4F100984BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D49D7F82C14E64B00984BBB /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		1D49D7FD2C14EA5800984BBB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1D49D80B2C16263A00984BBB /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		1D49D80D2C162A5300984BBB /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		1D84715E2C1751E60079FDBD /* AddPlayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayListViewController.swift; sourceTree = "<group>"; };
+		1D8471622C1761B20079FDBD /* PlayListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListTableViewCell.swift; sourceTree = "<group>"; };
+		1D8471632C1761B20079FDBD /* PlayListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListTableViewCell.xib; sourceTree = "<group>"; };
+		1D8471662C1763740079FDBD /* CreatePlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlaylistViewController.swift; sourceTree = "<group>"; };
+		1DF319C82C1632EE005637C9 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		1DF319C92C1632EE005637C9 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		1DF319CC2C163375005637C9 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		1DF319CD2C163375005637C9 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		1DF319D02C163BC1005637C9 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		1DF319D32C163E5A005637C9 /* ViewAllMoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAllMoviesViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D49D7DA2C14E4F000984BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D49D7D42C14E4F000984BBB = {
+			isa = PBXGroup;
+			children = (
+				1D49D7DF2C14E4F000984BBB /* ZetaDemoApp */,
+				1D49D7DE2C14E4F000984BBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D49D7DE2C14E4F000984BBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D49D7DD2C14E4F000984BBB /* ZetaDemoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D49D7DF2C14E4F000984BBB /* ZetaDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				1D49D7E02C14E4F000984BBB /* AppDelegate.swift */,
+				1D84715D2C17513D0079FDBD /* AddPlaylist */,
+				1D49D80A2C16262400984BBB /* Common */,
+				1DF319D22C163E30005637C9 /* ViewAll */,
+				1D49D7F42C14E5B700984BBB /* Home */,
+				1D49D7E62C14E4F000984BBB /* Main.storyboard */,
+				1D49D7E92C14E4F100984BBB /* Assets.xcassets */,
+				1D49D7EB2C14E4F100984BBB /* LaunchScreen.storyboard */,
+				1D49D7EE2C14E4F100984BBB /* Info.plist */,
+			);
+			path = ZetaDemoApp;
+			sourceTree = "<group>";
+		};
+		1D49D7F42C14E5B700984BBB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1D49D8012C1620E800984BBB /* View */,
+				1D49D7F72C14E5F700984BBB /* ViewModel */,
+				1D49D7F62C14E5ED00984BBB /* Model */,
+				1D49D7F52C14E5CE00984BBB /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1D49D7F52C14E5CE00984BBB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1D49D7E42C14E4F000984BBB /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1D49D7F62C14E5ED00984BBB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D49D7F82C14E64B00984BBB /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1D49D7F72C14E5F700984BBB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1D49D7FD2C14EA5800984BBB /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1D49D8012C1620E800984BBB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DF319C82C1632EE005637C9 /* MovieTableViewCell.swift */,
+				1DF319C92C1632EE005637C9 /* MovieTableViewCell.xib */,
+				1DF319CC2C163375005637C9 /* MovieCollectionViewCell.swift */,
+				1DF319CD2C163375005637C9 /* MovieCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1D49D80A2C16262400984BBB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1D49D80B2C16263A00984BBB /* ImageExtension.swift */,
+				1D49D80D2C162A5300984BBB /* StringExtension.swift */,
+				1DF319D02C163BC1005637C9 /* DateUtils.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1D84715D2C17513D0079FDBD /* AddPlaylist */ = {
+			isa = PBXGroup;
+			children = (
+				1D8471612C17619C0079FDBD /* View */,
+				1D8471602C17618A0079FDBD /* Controller */,
+			);
+			path = AddPlaylist;
+			sourceTree = "<group>";
+		};
+		1D8471602C17618A0079FDBD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1D84715E2C1751E60079FDBD /* AddPlayListViewController.swift */,
+				1D8471662C1763740079FDBD /* CreatePlaylistViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1D8471612C17619C0079FDBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D8471622C1761B20079FDBD /* PlayListTableViewCell.swift */,
+				1D8471632C1761B20079FDBD /* PlayListTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DF319D22C163E30005637C9 /* ViewAll */ = {
+			isa = PBXGroup;
+			children = (
+				1DF319D52C163E5E005637C9 /* Controller */,
+			);
+			path = ViewAll;
+			sourceTree = "<group>";
+		};
+		1DF319D52C163E5E005637C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1DF319D32C163E5A005637C9 /* ViewAllMoviesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D49D7DC2C14E4F000984BBB /* ZetaDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D49D7F12C14E4F100984BBB /* Build configuration list for PBXNativeTarget "ZetaDemoApp" */;
+			buildPhases = (
+				1D49D7D92C14E4F000984BBB /* Sources */,
+				1D49D7DA2C14E4F000984BBB /* Frameworks */,
+				1D49D7DB2C14E4F000984BBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZetaDemoApp;
+			productName = ZetaDemoApp;
+			productReference = 1D49D7DD2C14E4F000984BBB /* ZetaDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D49D7D52C14E4F000984BBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					1D49D7DC2C14E4F000984BBB = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 1D49D7D82C14E4F000984BBB /* Build configuration list for PBXProject "ZetaDemoApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D49D7D42C14E4F000984BBB;
+			productRefGroup = 1D49D7DE2C14E4F000984BBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D49D7DC2C14E4F000984BBB /* ZetaDemoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D49D7DB2C14E4F000984BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D49D7EA2C14E4F100984BBB /* Assets.xcassets in Resources */,
+				1D8471652C1761B20079FDBD /* PlayListTableViewCell.xib in Resources */,
+				1DF319CA2C1632EE005637C9 /* MovieTableViewCell.xib in Resources */,
+				1D49D7ED2C14E4F100984BBB /* Base in Resources */,
+				1D49D7E82C14E4F000984BBB /* Base in Resources */,
+				1DF319CE2C163375005637C9 /* MovieCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D49D7D92C14E4F000984BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D49D7E52C14E4F000984BBB /* HomeViewController.swift in Sources */,
+				1D8471672C1763740079FDBD /* CreatePlaylistViewController.swift in Sources */,
+				1D49D7F92C14E64B00984BBB /* HomeModel.swift in Sources */,
+				1DF319CB2C1632EE005637C9 /* MovieTableViewCell.swift in Sources */,
+				1D49D80C2C16263A00984BBB /* ImageExtension.swift in Sources */,
+				1DF319D12C163BC1005637C9 /* DateUtils.swift in Sources */,
+				1D49D80E2C162A5300984BBB /* StringExtension.swift in Sources */,
+				1D84715F2C1751E60079FDBD /* AddPlayListViewController.swift in Sources */,
+				1DF319D42C163E5A005637C9 /* ViewAllMoviesViewController.swift in Sources */,
+				1DF319CF2C163375005637C9 /* MovieCollectionViewCell.swift in Sources */,
+				1D49D7FE2C14EA5800984BBB /* HomeViewModel.swift in Sources */,
+				1D49D7E12C14E4F000984BBB /* AppDelegate.swift in Sources */,
+				1D8471642C1761B20079FDBD /* PlayListTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D49D7E62C14E4F000984BBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D49D7E72C14E4F000984BBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D49D7EB2C14E4F100984BBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D49D7EC2C14E4F100984BBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D49D7EF2C14E4F100984BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D49D7F02C14E4F100984BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D49D7F22C14E4F100984BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9BCXUTZMH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZetaDemoApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zeta.ZetaDemoApp.ZetaDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D49D7F32C14E4F100984BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9BCXUTZMH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZetaDemoApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zeta.ZetaDemoApp.ZetaDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D49D7D82C14E4F000984BBB /* Build configuration list for PBXProject "ZetaDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D49D7EF2C14E4F100984BBB /* Debug */,
+				1D49D7F02C14E4F100984BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D49D7F12C14E4F100984BBB /* Build configuration list for PBXNativeTarget "ZetaDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D49D7F22C14E4F100984BBB /* Debug */,
+				1D49D7F32C14E4F100984BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D49D7D52C14E4F000984BBB /* Project object */;
+}
